@@ -2,7 +2,7 @@ class Point:
     x: int
     y: int
 
-    __match_args__ = ["x", "y"]
+    __match_args__ = ("x", "y")
 
     def __init__(self, x, y):
         self.x = x
