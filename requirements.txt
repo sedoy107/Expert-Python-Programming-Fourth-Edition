@@ -29,5 +29,5 @@ redis-opentracing==0.1.2
 requests
 sentry-sdk
 watchdog
-Werkzeug<2.0.0
+Werkzeug
 zope.interface
