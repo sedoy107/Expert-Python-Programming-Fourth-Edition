@@ -24,3 +24,8 @@ class User(metaclass=CaseInterpolatedMeta):
 
     def greetUser(self):
         return f"Hello {self.getDisplayName()}!"
+
+
+if __name__ == "__main__":
+    user = User("John", "Doe")
+    print(user.greet_user())
