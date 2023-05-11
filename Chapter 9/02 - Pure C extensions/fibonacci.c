@@ -28,8 +28,7 @@ static char fibonacci_docs[] =
 
 
 static PyMethodDef fibonacci_module_methods[] = {
-    {"fibonacci", (PyCFunction)fibonacci_py,
-     METH_VARARGS, fibonacci_docs},
+    {"fibonacci", (PyCFunction)fibonacci_py, METH_VARARGS, fibonacci_docs},
     {NULL, NULL, 0, NULL}
 };
 
