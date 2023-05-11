@@ -26,7 +26,7 @@ def redis_backend(redis_client: Redis):
 
 
 @pytest.fixture(params=["redis_backend", "counter_backend"])
-def backend(request):
+def backend(request: pytest.FixtureRequest):
     return request.getfixturevalue(request.param)
 
 
