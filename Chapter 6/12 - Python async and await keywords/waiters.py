@@ -6,7 +6,8 @@ import time
 async def waiter(name):
     for _ in range(4):
         time_to_sleep = random.randint(1, 3) / 4
-        time.sleep(time_to_sleep)
+        await asyncio.sleep(time_to_sleep) # This is non-blocking
+        #time.sleep(time_to_sleep) # This is blocking
         print(f"{name} waited {time_to_sleep} seconds")
 
 
